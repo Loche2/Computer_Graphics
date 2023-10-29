@@ -8,15 +8,15 @@ pygame.init()
 screen_width = 800
 screen_height = 600
 screen = pygame.display.set_mode((screen_width, screen_height))
-pygame.display.set_caption("三种绘制直线算法")
+pygame.display.set_caption("基本图形元素的生成算法(直线)")
 
 # 定义颜色
 color = (255, 255, 255)
 
 # 定义直线算法类型
-DDA_ALGORITHM = 0
-MIDPOINT_ALGORITHM = 1
-BRESENHAM_ALGORITHM = 2
+DDA_ALGORITHM = 1
+MIDPOINT_ALGORITHM = 2
+BRESENHAM_ALGORITHM = 3
 current_algorithm = DDA_ALGORITHM  # 默认选择DDA算法
 
 
