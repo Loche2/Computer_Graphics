@@ -160,7 +160,7 @@ if __name__ == '__main__':
                 elif current_algorithm == BRESENHAM_ALGORITHM:
                     Bresenham(radius)
                 elif current_algorithm == ELLIPTIC_MIDPOINT_ALGORITHM:
-                    Elliptic_MidPoint(a=radius, b=radius / 2)
+                    Elliptic_MidPoint(a=radius / 4, b=radius / 2)
             elif event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_1:
                     current_algorithm = MIDPOINT_ALGORITHM

@@ -43,7 +43,7 @@ def FloodFill4(x, y, old_color, new_color):
         x, y = stack.pop()
         if screen.get_at((x, y)) == old_color:
             pygame.display.update()  # 更新显示
-            pygame.time.delay(5)  # 添加延迟，使绘制慢一点
+            pygame.time.delay(1)  # 添加延迟，使绘制慢一点
             screen.set_at((x, y), new_color)
             stack.append((x, y + 1))
             stack.append((x, y - 1))
